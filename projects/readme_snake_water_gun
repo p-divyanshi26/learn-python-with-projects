@@ -1,0 +1,20 @@
+Snake-Water-Gun Game (Console App)
+
+This is a simple Python console game based on the classic Snake-Water-Gun logic, where you play against the computer.
+
+## 🎮 Rules
+- Snake drinks Water → Snake wins
+- Water douses Gun → Water wins
+- Gun kills Snake → Gun wins
+
+## 🛠️ Tech Used
+- Python
+- `random` module
+- Basic input/output
+- Dictionary mapping for better readability
+
+##Example Gameplay
+-Enter your choice: s
+You chose Snake
+Computer chose Water
+You win!
