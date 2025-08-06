@@ -38,7 +38,7 @@ Jarvis is a Python-based voice assistant that listens for your voice commands an
 
 ---
 
- Getting Started
+## Getting Started
 1. Install Dependencies
    
   - pip install -r requirements.txt
