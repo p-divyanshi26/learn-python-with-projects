@@ -1,13 +1,13 @@
-# Jarvis - Voice-Activated Virtual Assistant
+# AURA - Voice-Activated Virtual Assistant
 
-Jarvis is a Python-based voice assistant that listens for your voice commands and performs tasks like opening websites, playing music, reading news, and answering questions using OpenAI's GPT-3.5-turbo. It activates when you say the wake word **"Jarvis"**.
+AURA is a Python-based voice assistant that listens for your voice commands and performs tasks like opening websites, playing music, reading news, and answering questions using OpenAI's GPT-3.5-turbo. It activates when you say the wake word **"AURA"**.
 
 ---
 
 ##  Key Features
 
 - **Voice Recognition**  
-  Uses the `speech_recognition` library to detect voice commands after hearing the wake word **"Jarvis"**.
+  Uses the `speech_recognition` library to detect voice commands after hearing the wake word **"AURA"**.
 
 - **Text-to-Speech**  
   Uses `gTTS` to convert text responses to speech and plays them using `pygame`.
@@ -51,11 +51,11 @@ Jarvis is a Python-based voice assistant that listens for your voice commands an
         "shape": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
         "believer": "https://www.youtube.com/watch?v=7wtfhZwyrcc"
     }
-4. Run Jarvis
-   python jarvis.py
+4. Run AURA
+   python AURA.py
 
 **Example Commands**
- "Jarvis" → Wake word
+ "AURA" → Wake word
  "Open Google"
  "Play believer"
  "Give me the news"
