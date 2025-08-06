@@ -45,7 +45,7 @@ def aiProcess(command):
     completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[
-        {"role": "system", "content": "You are a virtual assistant named jarvis skilled in general tasks like Alexa and Google Cloud. Give short responses please"},
+        {"role": "system", "content": "You are a virtual assistant named AURA skilled in general tasks like Alexa and Google Cloud. Give short responses please"},
         {"role": "user", "content": command}
     ]
     )
@@ -82,7 +82,7 @@ def processCommand(c):
          speak(output) 
         
 if __name__ == "__main__":
-    speak("Initializing Jarvis")
+    speak("Initializing AURA")
     
     while True:
         r = sr.Recognizer()
@@ -91,14 +91,14 @@ if __name__ == "__main__":
         try:
             with sr.Microphone() as source:
                 r.adjust_for_ambient_noise(source, duration=0.5)
-                print("Listening for 'Jarvis'...")
+                print("Listening for 'AURA'...")
                 audio = r.listen(source, timeout=3, phrase_time_limit=2)
 
             try:
                 word = r.recognize_google(audio)
                 print(f"You said: {word}")
 
-                if word.lower() == "jarvis":
+                if word.lower() == "AURA":
                     print("✅ Wake word detected.")
                     speak("Yes, I am listening.")
                     time.sleep(1)  # Give time for mic release before next listen
@@ -123,3 +123,4 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Error: {e}")
             traceback.print_exc()
+
